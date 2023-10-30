@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+  <link rel="stylesheet" type="text/css" href="./styles/style.css">
+   <form id="contatoForm" class="center">
+    <fieldset>
+      <legend>Formulário de contato</legend>
+
+      <label for="assunto">Assunto</label>
+      <select id="assunto" name="assunto">
+        <option value="duvida">Dúvida</option>
+        <option value="elogio">Elogio</option>
+        <option value="sugestao">Sugestão</option>
+        <option value="outro">Outro</option>
+      </select>
+
+      <label for="nome">Nome Completo</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Digite sua mensagem" required></textarea>
+
+      <label for="novidades">Deseja receber novidades por e-mail?</label>
+      <input type="checkbox" id="novidades" name="novidades" value="sim" checked>
+
+      <input type="submit" value="Enviar">
+    </fieldset>
+   </form>
+
+   <script src="./script/index.js"></script>
+</head>
+<body>
+  
+</body>
+</html>
